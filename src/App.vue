@@ -1,16 +1,18 @@
 <template>
   <div id="app" class="container-fluid">
-    <div class="row no-gutters">
+    <div id="main-row" class="row no-gutters">
       <!-- Menu Lateral -->
-      <div class="col-md-3">
+      <nav class="p-navbar col-md-3">
         <navigation/>
-      </div>
+      </nav>
       <!-- Área Principal de Navegação -->
-      <main class="col-md-9">
+      <main class="p-main col-md-9">
         <router-view />
       </main>
       <!-- Player -->
-      <div class="col-md-12"></div>
+      <footer class="p-footer col-md-12">
+        rodapé
+      </footer>
     </div>
   </div>
 </template>
@@ -26,8 +28,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#app, #main-row {
+  height: 100vh;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+
+main.p-main, nav.p-nav {
+  max-height: 90vh;
+  height: 90vh;
+}
+
+footer.p-footer {
+  min-height: 10vh;
 }
 </style>
