@@ -1,48 +1,43 @@
 <template>
-  <div id="app" class="container-fluid">
-    <div id="main-row" class="row no-gutters">
-      <!-- Menu Lateral -->
-      <nav class="p-navbar col-md-3">
-        <navigation/>
+  <div id="app">
+    <section class="row main-view">
+      <nav class="col-2">
+        Menu Lateral
       </nav>
-      <!-- Área Principal de Navegação -->
-      <main class="p-main col-md-9">
+      <main class="col-10">
         <router-view />
       </main>
-      <!-- Player -->
-      <footer class="p-footer col-md-12">
-        rodapé
-      </footer>
-    </div>
+    </section>
+    <footer class="row player">
+      <div class="col-12">
+        Player Inferior
+      </div>
+    </footer>
   </div>
 </template>
 
-<script>
-import Navigation from '@/components/app/Nav.vue'
-
-export default {
-  components: {
-    Navigation
-  }
-}
-</script>
-
 <style lang="scss" scoped>
-#app, #main-row {
+.row {
+  margin: 0;
+}
+
+#app {
   height: 100vh;
 }
 
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+.main-view {
+  height: 90%;
+  & nav {
+    background: rgb(122, 226, 186);
+  }
+
+  & main {
+    background: rgb(49, 179, 129);
+  }
 }
 
-main.p-main, nav.p-nav {
-  max-height: 90vh;
-  height: 90vh;
-}
-
-footer.p-footer {
-  min-height: 10vh;
+.player {
+  height: 10%;
+  background: rgb(133, 199, 219);
 }
 </style>

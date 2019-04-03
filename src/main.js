@@ -1,14 +1,13 @@
-import '@babel/polyfill'
 import Vue from 'vue'
-import './plugins/axios'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import jquery from 'jquery'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
-window.$ = window.jQuery = jquery
+// JavaScript Libs
+
+// CSS Libs
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
+import './assets/css/style.scss'
 
 Vue.config.productionTip = false
 
