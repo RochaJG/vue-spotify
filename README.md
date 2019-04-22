@@ -10,7 +10,7 @@
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/rochajg/vue-spotify.svg">
   <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/rochajg/vue-spotify.svg?color=yellow">
-  <img alt="Figma Ready" src="https://img.shields.io/badge/prototype-Figma%20Ready-ff69b4.svg?link=https://www.figma.com/file/S3i7Sy9S6vHrs2CH9opOjqMp/Vue-Spotify">
+  <a href="https://www.figma.com/file/S3i7Sy9S6vHrs2CH9opOjqMp/Vue-Spotify" target="_blank"><img alt="Figma Ready" src="https://img.shields.io/badge/prototype-Figma%20Ready-ff69b4.svg"></a>
 </p>
 
 
